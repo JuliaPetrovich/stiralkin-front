@@ -1,0 +1,133 @@
+.footer {
+  min-height: 275px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer__inner.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__inner.navigation {
+  margin-top: 30px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer__inner.footer_title {
+
+}
+
+.footer__inner.footer__link {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.footer__inner.contacts {
+  margin-top: 30px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contacts.footer__phones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+
+.footer__phones.phone {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__inner h5 {
+  margin-top: 15px;
+  font-weight: 200;
+}
+
+.footer__inner p {
+  margin-top: 15px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.footer__inner.info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media (max-width: 1150px) {
+  .footer__inner {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .footer__inner.navigation {
+    margin-left: 200px;
+  }
+
+  .footer__inner.info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .footer__inner.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .footer__inner.navigation {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__inner.info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+}

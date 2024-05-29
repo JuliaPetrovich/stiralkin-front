@@ -1,0 +1,16 @@
+.additional-information-section__list {
+  padding: 0 10px 0 10px;
+  font-weight: 600;
+  list-style-type: none;
+  font-size: 18px;
+  max-width: 560px;
+  text-align: center;
+  line-height: 1.55;
+}
+
+.additional-information-section__item::before {
+  content: "•";
+  padding-right: 5px;
+  font-size: 18px;
+  font-weight: 900;
+}

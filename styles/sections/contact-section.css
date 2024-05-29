@@ -1,0 +1,25 @@
+.contact-section {
+}
+
+.contact-section.phones {
+
+}
+
+.contact-section.phone {
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  font-weight: 100;
+}
+
+.contact-section.address {
+  margin-top: 25px;
+  font-weight: 100;
+}
+
+.yandex {
+  padding: 50px 0;
+  width: 100%;
+  max-width: 1060px;
+  height: 385px;
+}
