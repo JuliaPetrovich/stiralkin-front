@@ -22,7 +22,6 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     if (problemValue) object.problem = problemValue;
 
     const jsonData = JSON.stringify(object);
-    console.log(jsonData);
 
     fetch('https://mailsender-production-5fa1.up.railway.app/api/v1/mail', {
         method: 'POST',
