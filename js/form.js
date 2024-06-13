@@ -23,7 +23,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
     const jsonData = JSON.stringify(object);
 
-    fetch('http://localhost:9090/api/v1/mail', {
+    fetch('https://mailsender-production-5fa1.up.railway.app/api/v1/mail', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
