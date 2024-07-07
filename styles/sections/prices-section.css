@@ -32,6 +32,12 @@ th, td {
   text-align: left;
   padding: 8px;
 }
+th h6{
+  font-size: 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
 th {
   background-color: rgba(4, 69, 87, 1);
   color: white;
