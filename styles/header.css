@@ -126,6 +126,10 @@
   }
 
   .phones {
+    margin-left: 0;
+  }
+
+  .ph_num {
     font-size: 21px;
     margin-right: 16px;
   }
@@ -154,4 +158,3 @@
     padding-left: 45px;
   }
 }
-
