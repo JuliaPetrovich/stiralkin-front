@@ -126,7 +126,8 @@
   }
 
   .phones {
-    margin-left: 0;
+    font-size: 21px;
+    margin-right: 16px;
   }
 }
 
