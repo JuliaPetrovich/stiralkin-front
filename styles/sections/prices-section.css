@@ -34,9 +34,9 @@ th, td {
 }
 th h6{
   font-size: 16px;
-  border: 1px solid #ddd;
-  text-align: left;
-  padding: 8px;
+}
+td h6{
+  font-size: inherit;
 }
 th {
   background-color: rgba(4, 69, 87, 1);
