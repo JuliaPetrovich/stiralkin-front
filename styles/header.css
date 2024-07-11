@@ -131,7 +131,13 @@
 
   .ph_num {
     font-size: 21px;
-    margin-right: 16px;
+    margin: 0px 2px;
+    /* margin-right: 16px; */
+  }
+
+  .social_networks{
+    display: flex;
+    flex-direction: column;
   }
 }
 
