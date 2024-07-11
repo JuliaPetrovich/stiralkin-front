@@ -137,7 +137,11 @@
     margin: 0px 2px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    max-width: 500px;
+    min-width: 200px;
+    align-items: center;
   }
 
   .ph_num {
