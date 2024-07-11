@@ -50,12 +50,8 @@
   gap: 0px;
 }
 
-.viber{
-  margin-right: 2px;
-}
-
-.telegram{
-
+.viber {
+  margin: 0px 5px;
 }
 
 
@@ -139,11 +135,34 @@
   .phones {
     /* margin-left: 0; */
     margin: 0px 2px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .ph_num {
     font-size: 21px;
     /* margin-right: 16px; */
+
+    grid-row: 1 / 3;
+    /* Этот элемент будет занимать два ряда */
+    align-self: center;
+    /* Выравнивание по вертикали */
+  }
+
+  .viber {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    /* Выравнивание по вертикали */
+  }
+
+  .telegram {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    /* Выравнивание по вертикали */
   }
 }
 
