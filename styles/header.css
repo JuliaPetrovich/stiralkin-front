@@ -50,6 +50,12 @@
   gap: 0px;
 }
 
+.social_networks{
+  display: flex !important;
+  flex-direction: row;
+  gap: 2px;
+}
+
 .ph_num {
   font-size: 18px;
   color: white;
@@ -116,11 +122,7 @@
   text-decoration: none;
 }
 
-.social_networks{
-  display: flex;
-  flex-direction: row;
-  gap: 2px;
-}
+
 
 @media (max-width: 768px) {
   .logo {
