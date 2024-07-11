@@ -50,11 +50,14 @@
   gap: 0px;
 }
 
-.social_networks{
-  display: flex !important;
-  flex-direction: row;
-  gap: 2px;
+.viber{
+  margin-right: 2px;
 }
+
+.telegram{
+
+}
+
 
 .ph_num {
   font-size: 18px;
@@ -134,18 +137,13 @@
   }
 
   .phones {
-    margin-left: 0;
+    /* margin-left: 0; */
+    margin: 0px 2px;
   }
 
   .ph_num {
     font-size: 21px;
-    margin: 0px 2px;
     /* margin-right: 16px; */
-  }
-
-  .social_networks{
-    display: flex;
-    flex-direction: column;
   }
 }
 
