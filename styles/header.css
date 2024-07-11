@@ -50,6 +50,14 @@
   gap: 0px;
 }
 
+.viber-telegram {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+
 
 
 .ph_num {
