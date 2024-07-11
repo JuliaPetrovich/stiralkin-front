@@ -50,9 +50,6 @@
   gap: 0px;
 }
 
-.viber {
-  margin: 0px 5px;
-}
 
 
 .ph_num {
@@ -149,7 +146,8 @@
     /* margin-right: 16px; */
   }
 
-  .viber, .telegram {
+  .viber,
+  .telegram {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -161,7 +159,7 @@
     flex-direction: column;
     flex: 1;
     margin-left: 5px;
-        gap: 5px;
+    gap: 5px;
   }
 
   .viber {
@@ -188,9 +186,22 @@
 
 @media (min-width: 1441px) {
   .ph_num {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     color: white;
     text-decoration: none;
-    padding-left: 45px;
+    /* padding-left: 45px; */
+  }
+
+  .viber-telegram {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 10px;
+  }
+
+  .logo-text {
+    width: 230px;
   }
 }
