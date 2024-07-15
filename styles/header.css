@@ -58,6 +58,15 @@
 }
 
 
+.telegram img {
+  width: 30px;
+  height: 30px;
+}
+
+.viber img {
+  width: 30px;
+  height: 30px;
+}
 
 
 .ph_num {
@@ -126,6 +135,41 @@
   text-decoration: none;
 }
 
+@media (max-width: 400px) {
+  .ph_num {
+    font-size: 18px;
+  }
+
+  .telegram img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .viber img {
+    width: 25px;
+    height: 25px;
+  }
+
+
+  .viber-telegram {
+    margin-left: 2px;
+  }
+
+  .logo-container img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .burger-button {
+    margin-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 24px;
+  }
+
+}
 
 
 @media (max-width: 768px) {
@@ -203,7 +247,7 @@
     /* padding-left: 45px; */
   }
 
-  .phones{
+  .phones {
     margin-left: 40px;
   }
 
