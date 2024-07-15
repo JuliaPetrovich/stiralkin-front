@@ -38,13 +38,13 @@ document.getElementById('contactForm').addEventListener('submit', function (even
             });
         }
 
-        console.log("Ваша заявка успешно отправлена 2")
-
         return response.text();
     })
     .then(text => {
         this.reset();
-        console.log("Ваша заявка успешно отправлена 3")
+
+
+        
         Swal.fire({
             icon: "success",
             title: "Ваша заявка успешно отправлена!",
@@ -56,6 +56,9 @@ document.getElementById('contactForm').addEventListener('submit', function (even
             showCloseButton: true,
             showConfirmButton: false
         });
+
+        ym(97505549, 'reachGoal', '336460081');
+
     })
     .catch((error) => {
         console.error('There was a problem with your fetch operation:', error);
