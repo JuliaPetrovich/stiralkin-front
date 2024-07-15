@@ -230,12 +230,12 @@
 
 @media (max-width: 400px) {
   .ph_num {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .telegram img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
 
   .viber img {
