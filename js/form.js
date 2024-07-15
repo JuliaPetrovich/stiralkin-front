@@ -31,15 +31,20 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         body: jsonData
     })
         .then(response => {
+            
         if (!response.ok) {
             return response.json().then(err => {
                 throw new Error(err.message);
             });
         }
+
+        console.log("Ваша заявка успешно отправлена 2")
+
         return response.text();
     })
     .then(text => {
         this.reset();
+        console.log("Ваша заявка успешно отправлена 3")
         Swal.fire({
             icon: "success",
             title: "Ваша заявка успешно отправлена!",
