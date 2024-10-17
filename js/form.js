@@ -5,6 +5,8 @@ const problemSelect = document.getElementById('problem');
 const ageSelect = document.getElementById('age');
 const brandSelect = document.getElementById('brand');
 
+const BASE_URL = 'https://stiralkinback-production.up.railway.app'
+
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
     submitButton.disabled = true;
@@ -23,7 +25,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
     const jsonData = JSON.stringify(object);
 
-    fetch('https://mailsender-production-5fa1.up.railway.app/api/v1/mail', {
+    fetch(`${BASE_URL}/api/v1/mail`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
