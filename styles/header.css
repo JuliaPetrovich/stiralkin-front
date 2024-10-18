@@ -70,7 +70,7 @@
 
 
 .ph_num {
-  font-size: 18px;
+  font-size: 22px;
   color: white;
   text-decoration: none;
 }
@@ -205,10 +205,12 @@
   .ph_num {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 22px;
     color: white;
     text-decoration: none;
-    width: 181px;
+    /* width: 181px; */
+    width: 234px;
     /* padding-left: 45px; */
   }
 
