@@ -59,7 +59,14 @@ document.getElementById('contactForm').addEventListener('submit', function (even
             showConfirmButton: false
         });
 
+        // Yandex Metrica conversion
         ym(97505549, 'reachGoal', '336460081');
+
+        // Google tag (gtag.js) event -->
+        gtag('event', 'conversion_event_purchase', {
+            // <event_parameters>
+        });
+
 
     })
     .catch((error) => {
