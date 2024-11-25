@@ -186,6 +186,36 @@
   }
 }
 
+
+
+
+.header__seti span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.header-phone__footer {
+  font-weight: 600;
+  color: #ff822e;
+  font-size: 16px;
+  border-bottom: 3px dashed #ff822e;
+  width: auto;
+  margin: 0 auto;
+  cursor: pointer
+}
+
+@media screen and (max-width: 768px) {
+  .header-phone__footer {
+    display: block;
+    width: auto;
+    font-size: 14px;
+    text-align: center;
+    color: #ff822e;
+  }
+}
+
+
 @media (max-width: 1440px) {
   .burger-button {
     margin-right: 25px;
@@ -202,6 +232,14 @@
 }
 
 @media (min-width: 1441px) {
+  .header-phone__footer {
+    display: block;
+    width: auto;
+    font-size: 14px;
+    text-align: center;
+    color: #ff822e;
+  }
+
   .ph_num {
     display: flex;
     align-items: center;
@@ -212,6 +250,7 @@
     /* width: 181px; */
     width: 234px;
     /* padding-left: 45px; */
+    flex-direction: column;
   }
 
   .phones {

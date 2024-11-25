@@ -19,7 +19,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-button, input {
+button,
+input {
   border: none;
   background: none;
 }
@@ -34,7 +35,7 @@ header {
   align-items: center;
   width: 100%;
   height: 80px;
-  background-color: rgba(4, 69, 87, 1);
+  background-color: rgb(5, 71, 89);
 }
 
 .section {
@@ -44,6 +45,7 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 960px;
+  font-size:medium;
 }
 
 .section-title {
@@ -83,6 +85,13 @@ header {
   outline: none;
 }
 
+@media (max-width: 900px) {
+  #scrollToTopButton {
+    bottom: 60px;
+  }
+
+}
+
 #scrollToTopButton:hover {
   background-color: #de742c;
 }
@@ -100,7 +109,3 @@ header {
   font-weight: 100;
   color: black;
 }
-
-
-
-
