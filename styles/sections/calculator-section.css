@@ -28,6 +28,37 @@
   min-width: 250px;
 }
 
+.select-hidden-visible {
+  border: 1px solid transparent;
+  height: 56px;
+  padding: 0px 20px;
+  font-size: 16px;
+  line-height: 1.33;
+  max-width: 200px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .select-hidden-visible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: none;
+    padding: 0 20px;
+    height: 56px;
+    background-color: white;
+    border: 1px solid transparent;
+    font-size: 16px;
+    line-height: 1.33;
+    min-width: 200px;
+  }
+}
+
+.select-hidden-visible:hover {
+  border: 1px solid #ff822e;
+}
+
 .calculator-section__description {
   font-size: 22px;
   font-weight: 500;
@@ -62,4 +93,3 @@
 .highlight {
   color: #ff822e;
 }
-

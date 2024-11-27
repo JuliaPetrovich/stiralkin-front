@@ -385,7 +385,7 @@
         <div class="steps-block__title11">от <b>50 Byn</b> до <b>180 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Не сливает воду, Не отжимает">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -422,7 +422,7 @@
         <div class="steps-block__title11">от <b>50 Byn</b> до <b>180 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Не заливает воду">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -459,7 +459,7 @@
         <div class="steps-block__title11">от <b>115 Byn</b> до <b>180 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Не греет воду">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -503,7 +503,7 @@
         <div class="steps-block__title11">от <b>80 Byn</b> до <b>180 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Не включается">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -553,7 +553,7 @@
         <div class="steps-block__title11">от <b>50 Byn</b> до <b>220 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Не открывается люк, Не закрывается люк">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -602,7 +602,7 @@
         <div class="steps-block__title11">от <b>120 Byn</b> до <b>280 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Не крутит барабан">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -652,7 +652,7 @@
         <div class="steps-block__title11">от <b>100 Byn</b> до <b>180 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Зависает в процессе стирки">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -707,7 +707,7 @@
         <div class="steps-block__title11">от <b>50 Byn</b> до <b>250 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Шумит">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -756,7 +756,7 @@
         <div class="steps-block__title11">от <b>80 Byn</b> до <b>220 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" onclick="sendToHref(event)">
+            <button class="btn btn-whatsapp" data-service-name="Течёт под машинкой">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -794,7 +794,7 @@
         <div class="steps-block__title11">от <b>80 Byn</b> до <b>280 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" data-service-name="Выбивает пробки">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -1055,36 +1055,29 @@
             <input class="content__form input" name="phone" placeholder="Телефон" type="text"
               pattern="^(\+375|375|80)(\(\d{2}\)|\d{2})((\d{7})|(\d{3}-\d{2}-\d{2})|(\d{2}-\d{2}-\d{3}))$"
               title="Некорректный формат номера телефона" required>
-              
-              <!-- <input class="content__form input" type="hidden" disabled name="serviceName" placeholder="Выбрать услугу"
+
+            <!-- <input class="content__form input" type="hidden" disabled name="serviceName" placeholder="Выбрать услугу"
               type="text" maxlength="100"> -->
 
             <div class="selects select__outer">
-              <label for="brand">Марка</label>
-              <select class="select" id="brand">
+              <label style="display: none;" for="serviceName">Выберите услугу</label>
+              <select hidden class="select-hidden-visible " id="serviceName">
                 <option value="" disabled selected hidden>Выберите услугу</option>
-                <option value="AEG">AEG</option>
-                <option value="Ardo">Ardo</option>
-                <option value="Ariston">Ariston</option>
-                <option value="Атлант">Атлант</option>
-                <option value="Beko">Beko</option>
-                <option value="Bosch">Bosch</option>
-                <option value="Candy">Candy</option>
-                <option value="Electrolux">Electrolux</option>
-                <option value="Haier">Haier</option>
-                <option value="Indesit">Indesit</option>
-                <option value="Samsung">Samsung</option>
-                <option value="Siemens">Siemens</option>
-                <option value="Zanussi">Zanussi</option>
-                <option value="Whirlpool">Whirlpool</option>
-                <option value="LG">LG</option>
-                <option value="Gorenie">Gorenie</option>
-                <option value="Miele">Miele</option>
-                <option value="Друга марка стиральной машины">Другая</option>
+                <option value="Не сливает воду, Не отжимает">НЕ СЛИВАЕТ ВОДУ, НЕ ОТЖИМАЕТ</option>
+                <option value="Не заливает воду">НЕ ЗАЛИВАЕТ ВОДУ</option>
+                <option value="Не греет воду">НЕ ГРЕЕТ ВОДУ</option>
+                <option value="Не включается">НЕ ВКЛЮЧАЕТСЯ</option>
+                <option value="Не открывается люк, Не закрывается люк">НЕ ОТКРЫВАЕТСЯ ЛЮК, НЕ ЗАКРЫВАЕТСЯ ЛЮК</option>
+                <option value="Не крутит барабан">НЕ КРУТИТ БАРАБАН</option>
+                <option value="Зависает в процессе стирки">ЗАВИСАЕТ В ПРОЦЕССЕ СТИРКИ</option>
+                <option value="Шумит">ШУМИТ</option>
+                <option value="Течёт под машинкой">ТЕЧЁТ ПОД МАШИНКОЙ</option>
+                <option value="Выбивает пробки">ВЫБИВАЕТ ПРОБКИ</option>
+                <option value="Другая услуга">Другая услуга</option>
               </select>
             </div>
 
-            
+
             <button id="submit-button" class="content__form button" type="submit">
               <span id="buttonText">Отправить заявку</span>
               <span id="loader" class="loader"></span>
