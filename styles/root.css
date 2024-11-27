@@ -38,6 +38,10 @@ header {
   background-color: rgb(5, 71, 89);
 }
 
+.smaller_padding_section{
+  padding:0px 0 0 !important;
+}
+
 .section {
   padding: 105px 0 0;
   display: flex;
