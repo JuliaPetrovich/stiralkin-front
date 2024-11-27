@@ -4,6 +4,8 @@ const buttonText = document.getElementById('buttonText');
 const problemSelect = document.getElementById('problem');
 const ageSelect = document.getElementById('age');
 const brandSelect = document.getElementById('brand');
+const serviceNameSelect = document.getElementById('serviceName');
+let serviceNameValue;
 
 const BASE_URL = 'https://stiralkinback-production.up.railway.app'
 
@@ -13,6 +15,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     loader.style.display = 'inline-block';
     buttonText.style.display = 'none';
 
+    let serviceNameValue = brandSelect.options[brandSelect.selectedIndex].value;
     let brandValue = brandSelect.options[brandSelect.selectedIndex].value;
     let ageValue = ageSelect.options[ageSelect.selectedIndex].value;
     let problemValue = problemSelect.options[problemSelect.selectedIndex].value !== 'form-section' ? problemSelect.options[problemSelect.selectedIndex].value : undefined;
@@ -94,3 +97,14 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         buttonText.style.display = 'inline-block';
     })
 });
+
+function sendToHref(event){
+    // или сделать sendToHref(название услуги)
+    // и передавать название в коде
+
+    //Замена шлангов
+
+    //console.log("call href",event)
+    //serviceNameValue = event.target.value;
+    window.location.href="#form-section";
+}

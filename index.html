@@ -360,8 +360,8 @@
         <picture>
           <source srcset="resources/promotion-1.png" type="image/webp">
           <source srcset="resources/promotion-1.png" type="image/png">
-          <img loading="lazy" class="promotion-img promotion-img-1" src="resources/promotion-1.png"
-            alt="рекламная акция">
+          <!-- <img loading="lazy" class="promotion-img promotion-img-1" src="resources/promotion-1.png"
+            alt="рекламная акция"> -->
         </picture>
         <!-- <img loading="lazy"  class="promotion-img promotion-img-1" src="resources/promotion-1.png" alt=""> -->
 
@@ -813,7 +813,7 @@
         <div class="steps-block__title11">от <b>80 Byn</b> до <b>220 Byn</b></div>
         <div class="services-price__link1">
           <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp">
+            <button class="btn btn-whatsapp" onclick="sendToHref(event)">
               <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
             </button>
             <div class="btn-light"></div>
@@ -878,12 +878,12 @@
         <p class="promotion-agreement">Заполняя поля формы, Вы даете согласие на <span class="policy">обработку
             персональных данных</span></p>
 
-            
+
         <picture>
           <source srcset="resources/promotion-2.png" type="image/png">
           <source srcset="resources/promotion-2.png" type="image/png">
-          <img loading="lazy" class="promotion-img promotion-img-2" src="resources/promotion-2.png"
-            alt="скидки пенсионерам">
+          <!-- <img loading="lazy" class="promotion-img promotion-img-2" src="resources/promotion-2.png"
+            alt="скидки пенсионерам"> -->
         </picture>
         <!-- <img loading="lazy"  class="promotion-img promotion-img-2" src="resources/promotion-2.png" alt=""> -->
       </div>
@@ -1135,10 +1135,41 @@
           <h3 class="form-section__content content__subtitle">В течении 5 мин. с Вами свяжется наш диспетчер для
             бесплатной консультации</h3>
           <form id="contactForm" class="form-section__content content__form">
+
             <input class="content__form input" name="name" placeholder="Имя" type="text" maxlength="100" required>
             <input class="content__form input" name="phone" placeholder="Телефон" type="text"
               pattern="^(\+375|375|80)(\(\d{2}\)|\d{2})((\d{7})|(\d{3}-\d{2}-\d{2})|(\d{2}-\d{2}-\d{3}))$"
               title="Некорректный формат номера телефона" required>
+              
+              <!-- <input class="content__form input" type="hidden" disabled name="serviceName" placeholder="Выбрать услугу"
+              type="text" maxlength="100"> -->
+
+            <div class="selects select__outer">
+              <label for="brand">Марка</label>
+              <select class="select" id="brand">
+                <option value="" disabled selected hidden>Выберите услугу</option>
+                <option value="AEG">AEG</option>
+                <option value="Ardo">Ardo</option>
+                <option value="Ariston">Ariston</option>
+                <option value="Атлант">Атлант</option>
+                <option value="Beko">Beko</option>
+                <option value="Bosch">Bosch</option>
+                <option value="Candy">Candy</option>
+                <option value="Electrolux">Electrolux</option>
+                <option value="Haier">Haier</option>
+                <option value="Indesit">Indesit</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Siemens">Siemens</option>
+                <option value="Zanussi">Zanussi</option>
+                <option value="Whirlpool">Whirlpool</option>
+                <option value="LG">LG</option>
+                <option value="Gorenie">Gorenie</option>
+                <option value="Miele">Miele</option>
+                <option value="Друга марка стиральной машины">Другая</option>
+              </select>
+            </div>
+
+            
             <button id="submit-button" class="content__form button" type="submit">
               <span id="buttonText">Отправить заявку</span>
               <span id="loader" class="loader"></span>
