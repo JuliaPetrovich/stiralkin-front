@@ -7,8 +7,8 @@
 }
 
 
-html {
-    font-size: .05322vw;
+.html {
+    font-size: .05322vw !important;
     scroll-behavior: smooth
 }
 
@@ -24,16 +24,16 @@ body {
 
 .prices-section input {
     outline: none;
-    width: 201rem;
-    border-radius: 25rem;
+    width: 201px;
+    border-radius: 25px;
     background-color: #f6f6f5;
-    padding: 19rem 25rem;
-    font-size: 13rem;
+    padding: 19px 25px;
+    font-size: 13px;
     color: #282728;
-    letter-spacing: .33rem;
-    margin-right: 5rem;
+    letter-spacing: .33px;
+    margin-right: 5px;
     border: none;
-    height: 52rem
+    height: 52px
 }
 
 
@@ -50,11 +50,11 @@ body {
 }
 
 .promotion-block {
-    width: 743rem;
+    width: 743px;
     height: auto;
-    border-radius: 35rem;
+    border-radius: 35px;
     background-color: #e4f3d4;
-    padding: 43rem 57rem;
+    padding: 43px 57px;
     position: relative;
     z-index: 1
 }
@@ -73,10 +73,10 @@ body {
 }
 
 .promotion-header {
-    font-size: 34rem;
+    font-size: 34px;
     font-weight: 400;
-    line-height: 42rem;
-    margin-bottom: 24rem;
+    line-height: 42px;
+    margin-bottom: 24px;
     width: 75%
 }
 
@@ -85,10 +85,10 @@ body {
 }
 
 .promotion-text {
-    letter-spacing: .4rem;
-    width: 370rem;
+    letter-spacing: .4px;
+    width: 370px;
     margin-bottom: 12px;
-    line-height: 18rem;
+    line-height: 18px;
     word-break: break-all;
     font-size: 11px;
     font-weight: 500;
@@ -103,10 +103,10 @@ body {
 }
 
 .promotion-text1 {
-    letter-spacing: .4rem;
-    width: 260rem;
+    letter-spacing: .4px;
+    width: 260px;
     margin-bottom: 14px;
-    line-height: 18rem
+    line-height: 18px
 }
 
 .promotion-text1 span {
@@ -114,28 +114,28 @@ body {
 }
 
 .promotion-form {
-    margin-bottom: 11rem;
-    margin-top: 29rem;
+    margin-bottom: 11px;
+    margin-top: 29px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
 }
 
 .promotion-form button {
-    width: 223rem;
-    height: 51rem
+    width: 223px;
+    height: 51px
 }
 
 .promotion-agreement {
-    letter-spacing: .4rem;
-    width: 370rem;
+    letter-spacing: .4px;
+    width: 370px;
     margin-bottom: 12px;
-    line-height: 18rem;
+    line-height: 18px;
     word-break: break-all;
     font-size: 11px;
     font-weight: 500;
     font-family: TildaSans, Arial, sans-serif;
-    letter-spacing: .25rem
+    letter-spacing: .25px
 }
 
 .promotion-img {
@@ -146,11 +146,11 @@ body {
 }
 
 .promotion-img-1 {
-    width: 353rem
+    width: 353px
 }
 
 .promotion-img-2 {
-    width: 388rem
+    width: 388px
 }
 
 
@@ -165,16 +165,16 @@ p .policy {
 }
 
 .steps-block__list-item1 p {
-    font-size: 18rem
+    font-size: 18px
 }
 
 
 .steps {
-    padding-bottom: 130rem
+    padding-bottom: 130px
 }
 
 .steps .services-header {
-    width: 880rem
+    width: 880px
 }
 
 .steps .services-header__line {
@@ -184,32 +184,33 @@ p .policy {
 .steps-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
 .steps-block {
-    border-radius: 35rem;
+    border-radius: 35px;
     background-color: #f6f6f5;
     position: relative;
-    width: 490rem;
-    height: 550rem;
-    padding: 70rem 70rem 0
+    width: 490px;
+    height: 550px;
+    padding: 70px 70px 0
 }
 
 .steps-block1 {
-    border-radius: 35rem;
+    border-radius: 35px;
     background: #f0f0f0;
     position: relative;
     display: grid;
-    width: 490rem;
-    height: fit-content;
+    width: 380px;
+    height: auto;
     margin: 20px;
     box-shadow: 0 0 25px -5px hwb(123 24% 62% / 0.05);
-    padding: 70rem 70rem 70rem;
+    padding: 30px;
+
+    align-items: end;
 }
 
 .steps-block1 .policy {
@@ -217,14 +218,14 @@ p .policy {
 }
 
 .steps-block2 {
-    border-radius: 35rem;
+    border-radius: 35px;
     background: linear-gradient(to right bottom, rgba(246, 246, 245, .42), rgb(238 233 255));
     position: relative;
     width: 100%;
     height: auto;
     margin: 20px;
     box-shadow: 0 0 25px -5px rgb(0 0 0 / 20%);
-    padding: 70rem 70rem 0
+    padding: 70px 70px 0
 }
 
 .steps-block2 .policy {
@@ -250,18 +251,18 @@ p .policy {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 12rem
+    margin-bottom: 12px
 }
 
 .steps-block form input {
-    width: 301rem;
-    height: 66rem;
-    border-radius: 33rem;
+    width: 301px;
+    height: 66px;
+    border-radius: 33px;
     background-color: #ffffff;
     color: #fff;
     padding: 25px 34px;
     margin: 0;
-    margin-bottom: 13rem
+    margin-bottom: 13px
 }
 
 .steps-block form input::-webkit-input-placeholder {
@@ -281,13 +282,13 @@ p .policy {
 }
 
 .steps-block form button {
-    width: 301rem;
-    height: 66rem;
+    width: 301px;
+    height: 66px;
     background-color: #fff;
-    border-radius: 33rem;
+    border-radius: 33px;
     color: rgba(4, 69, 87, 1);
-    letter-spacing: .97rem;
-    font-size: 13rem
+    letter-spacing: .97px;
+    font-size: 13px
 }
 
 .steps-block form .btn-light {
@@ -296,8 +297,8 @@ p .policy {
 
 .steps-block__number {
     position: absolute;
-    width: 65rem;
-    height: 66rem;
+    width: 65px;
+    height: 66px;
     background-color: rgba(4, 69, 87, 1);
     border-radius: 50%;
     display: -webkit-box;
@@ -309,12 +310,12 @@ p .policy {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-size: 17rem;
+    font-size: 17px;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    top: 36rem;
-    right: 30rem
+    top: 36px;
+    right: 30px
 }
 
 .steps-block__number-1 {
@@ -323,31 +324,31 @@ p .policy {
 }
 
 .steps-block__title {
-    font-size: 30rem;
-    letter-spacing: .75rem;
+    font-size: 30px;
+    letter-spacing: .75px;
     font-weight: 700;
-    margin-bottom: 28rem
+    margin-bottom: 28px
 }
 
 .steps-block__title1 h3 {
-    font-size: 30rem;
-    letter-spacing: .75rem;
+    font-size: 30px;
+    letter-spacing: .75px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 28rem
+    margin-bottom: 28px
 }
 
 .steps-block__title11 {
     text-align: center;
     font-size: 20px;
-    letter-spacing: .75rem;
-    margin-bottom: 28rem
+    letter-spacing: .75px;
+    margin-bottom: 28px
 }
 
 .steps-block__title-blog {
     font-size: 24px;
-    letter-spacing: .75rem;
-    margin-bottom: 28rem
+    letter-spacing: .75px;
+    margin-bottom: 28px
 }
 
 .libleft {
@@ -357,66 +358,66 @@ p .policy {
 
 .steps-block__title-1 {
     color: #fff;
-    margin-bottom: 20rem
+    margin-bottom: 20px
 }
 
 .steps-block__title-form {
-    margin-bottom: 22rem
+    margin-bottom: 22px
 }
 
 .steps-block__phone {
-    margin-bottom: 0rem
+    margin-bottom: 0px
 }
 
 .steps-block__phone .header-phone__time {
-    margin-bottom: 7rem;
+    margin-bottom: 7px;
     color: #fff;
-    margin-left: 6rem
+    margin-left: 6px
 }
 
 .steps-block__phone .header-phone__circle {
     background: #fff;
-    width: 6rem;
-    height: 6rem
+    width: 6px;
+    height: 6px
 }
 
 .steps-block__phone .header-phone__circle::before {
     background: #fff;
-    width: 10rem;
-    height: 10rem
+    width: 10px;
+    height: 10px
 }
 
 .steps-block__phone .header-phone__link {
-    margin-left: -4rem
+    margin-left: -4px
 }
 
 .steps-block__phone .header-phone__link img {
     -webkit-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1);
-    margin-right: -3rem
+    margin-right: -3px
 }
 
 .steps-block__phone .header-phone__link p {
     color: #fff;
-    font-size: 23rem;
-    letter-spacing: 1.15rem
+    font-size: 23px;
+    letter-spacing: 1.15px
 }
 
 .steps-block__footer {
-    font-size: 10rem;
+    font-size: 10px;
     color: #fff;
     font-weight: 500;
-    letter-spacing: .25rem;
+    letter-spacing: .25px;
     text-align: center;
-    width: 223rem;
+    width: 223px;
     margin: 0 auto
 }
 
 .steps-block__text {
-    width: 310rem;
-    line-height: 22rem;
-    letter-spacing: .4rem;
-    margin-bottom: 26rem;
+    width: 310px;
+    line-height: 22px;
+    letter-spacing: .4px;
+    margin-bottom: 26px;
     font-weight: 500
 }
 
@@ -431,13 +432,13 @@ p .policy {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 12rem
+    margin-bottom: 12px
 }
 
 .steps-block__list-item p {
-    font-size: 14rem;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: .49rem
+    letter-spacing: .49px
 }
 
 .steps-block__list-item1 {
@@ -447,19 +448,19 @@ p .policy {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 12rem
+    margin-bottom: 12px
 }
 
 .steps-block__list-item1 p {
-    font-size: 20rem;
+    font-size: 20px;
     font-weight: 600;
-    letter-spacing: .49rem;
-    margin-left: 60rem;
+    letter-spacing: .49px;
+    margin-left: 60px;
 }
 
 .steps-block__list-check {
-    width: 40rem;
-    height: 40rem;
+    width: 40px;
+    height: 40px;
     background-color: rgba(4, 69, 87, 1);
     border-radius: 50%;
     display: -webkit-box;
@@ -471,12 +472,12 @@ p .policy {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-right: 16rem
+    margin-right: 16px
 }
 
 .steps-block__list-check1 {
-    width: 40rem;
-    height: 40rem;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     position: absolute;
     display: -webkit-box;
@@ -491,7 +492,7 @@ p .policy {
 }
 
 .steps-block__list-check img {
-    width: 15rem
+    width: 15px
 }
 
 .steps-block__list-check1 img {
@@ -499,25 +500,28 @@ p .policy {
 }
 
 .services-price__link1 button {
-    width: 350rem;
-    padding: 20rem 0;
-    border-radius: 38rem;
-    font-size: 18rem;
-    letter-spacing: .4rem;
-    height: 70rem
+    width: 320px;
+    padding: 20px 0;
+    border-radius: 38px;
+    font-size: 18px;
+    letter-spacing: .4px;
+    height: 70px
 }
 
 .steps-block__title1 h3 a {
-    letter-spacing: 0.65rem;
+    letter-spacing: 0.65px;
     color: rgba(4, 69, 87, 1);
-    padding-bottom: 5rem;
-    border-bottom: 2rem dashed rgba(4, 69, 87, 1);
+    padding-bottom: 5px;
+    border-bottom: 2px dashed rgba(4, 69, 87, 1);
 }
 
 .btn-wrap {
     position: relative;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
-    border-radius: 25rem
+    border-radius: 25px;
+    width: fit-content;
 }
 
 .btn-light {
@@ -555,13 +559,13 @@ p .policy {
 }
 
 .btn img {
-    margin-right: 12rem
+    margin-right: 12px
 }
 
 .btn-whatsapp {
-    border-radius: 25rem;
+    border-radius: 25px;
     font-weight: 600;
-    letter-spacing: .33rem;
+    letter-spacing: .33px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -577,14 +581,19 @@ p .policy {
     border: none;
     cursor: pointer;
     padding: 1px 12px !important;
-    border-radius: 25rem;
+    border-radius: 25px;
     background-color: rgba(4, 69, 87, 1);
-    font-size: 13rem;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: .97rem;
+    letter-spacing: .97px;
     color: #fff;
     font-family: TildaSans, Arial, sans-serif;
-    height: 52rem
+    height: 52px
+}
+
+.services-price__link1 {
+    display: grid;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -603,8 +612,8 @@ p .policy {
     .promotion-block {
         width: 100%;
         height: auto;
-        margin-bottom: 30rem;
-        padding: 56rem 46rem;
+        margin-bottom: 30px;
+        padding: 56px 46px;
         padding-bottom: 0
     }
 
@@ -613,7 +622,7 @@ p .policy {
     }
 
     .promotion-header {
-        font-size: 32rem;
+        font-size: 32px;
         line-height: normal;
         width: 100%
     }
@@ -632,7 +641,7 @@ p .policy {
     .promotion-form input {
         display: block;
         width: 100%;
-        margin: 0 auto 15rem
+        margin: 0 auto 15px
     }
 
     .promotion-form button {
@@ -644,7 +653,7 @@ p .policy {
     .promotion-agreement {
         text-align: center;
         width: 100%;
-        margin: 0 auto 25rem
+        margin: 0 auto 25px
     }
 
     .promotion-img {
@@ -656,15 +665,15 @@ p .policy {
     }
 
     .services-price__link1 button {
-        width: 300rem;
-        padding: 20rem;
+        width: 300px;
+        padding: 20px;
         text-align: left;
         margin: auto;
-        margin-bottom: 10rem
+        margin-bottom: 10px
     }
 
     .steps-block__title11 {
-        font-size: 23rem
+        font-size: 23px
     }
 
     .steps-wrap {
@@ -677,13 +686,13 @@ p .policy {
     .steps-block1 {
         width: 100%;
         margin: 0;
-        padding: 50rem 30rem;
+        padding: 50px 30px;
         height: auto;
-        margin-bottom: 30rem
+        margin-bottom: 30px
     }
 
     .steps-block__title1 {
-        font-size: 28rem;
+        font-size: 28px;
         margin-bottom: 20px;
     }
 }
@@ -715,8 +724,8 @@ p .policy {
     }
 
     img {
-        margin-right: 12rem;
-        width: 23rem
+        margin-right: 12px;
+        width: 23px
     }
 }
 
@@ -737,7 +746,101 @@ p .policy {
     }
 
     img {
-        margin-right: 12rem;
-        width: 23rem
+        margin-right: 12px;
+        width: 23px
     }
+}
+
+
+
+@media (max-width: 1250px) {
+
+    .steps-block1 {
+        border-radius: 35px;
+        background: #f0f0f0;
+        position: relative;
+        display: grid;
+        width: 300px;
+        height: auto;
+        margin: 20px;
+        box-shadow: 0 0 25px -5px hwb(123 24% 62% / 0.05);
+        padding: 20px;
+
+        align-items: end;
+    }
+
+    .services-price__link1 button {
+        width: 240px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .steps-block1 {
+        border-radius: 35px;
+        background: #f0f0f0;
+        position: relative;
+        display: grid;
+        width: 500px;
+        height: auto;
+        margin: 20px;
+        box-shadow: 0 0 25px -5px hwb(123 24% 62% / 0.05);
+        padding: 20px;
+
+        align-items: end;
+    }
+
+    .services-price__link1 button {
+        width: 350px;
+    }
+
+    .steps-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .steps-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .steps-block1 {
+        border-radius: 35px;
+        background: #f0f0f0;
+        position: relative;
+        display: grid;
+        width: 300px;
+        height: auto;
+        margin: 20px;
+        box-shadow: 0 0 25px -5px hwb(123 24% 62% / 0.05);
+        padding: 20px;
+
+        align-items: end;
+    }
+
+    .services-price__link1 button {
+        width: 200px;
+    }
+
+    .steps-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .services-price__link1 button {
+        margin-bottom: 0px;
+    }
+
 }
