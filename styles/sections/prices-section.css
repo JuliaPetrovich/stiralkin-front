@@ -208,7 +208,7 @@ p .policy {
     width: 490rem;
     height: fit-content;
     margin: 20px;
-    box-shadow: 0 0 25px -5px hwb(123 24% 62% / 0.1);
+    box-shadow: 0 0 25px -5px hwb(123 24% 62% / 0.05);
     padding: 70rem 70rem 70rem;
 }
 
