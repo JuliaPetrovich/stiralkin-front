@@ -105,7 +105,7 @@ function sendToHref(event) {
     const serviceName = event.target.getAttribute('data-service-name');
 
     // Set the value of the select field to the selected service name
-    serviceNameSelect.hidden = false;
+    //serviceNameSelect.hidden = false;
 
     serviceNameSelect.value = serviceName;
     //console.log("send",serviceName)
