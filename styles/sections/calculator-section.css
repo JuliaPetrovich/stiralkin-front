@@ -29,6 +29,7 @@
 }
 
 .select-hidden-visible {
+  display: none;
   border: 1px solid transparent;
   height: 56px;
   padding: 0px 20px;
@@ -40,7 +41,8 @@
 
 @media (max-width: 768px) {
   .select-hidden-visible {
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: space-between;
     gap: 25px;
@@ -56,6 +58,7 @@
 }
 
 .select-hidden-visible:hover {
+  display: none;
   border: 1px solid #ff822e;
 }
 
