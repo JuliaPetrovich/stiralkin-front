@@ -596,9 +596,9 @@ p .policy {
 }
 
 @media screen and (max-width: 768px) {
-    html {
+    /* html {
         font-size: 0.1353vw;
-    }
+    } */
 
     .promotion {
         -webkit-box-orient: vertical;
