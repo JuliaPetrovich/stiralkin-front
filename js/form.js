@@ -29,7 +29,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     if (problemValue) object.problem = problemValue;
     if (serviceNameValue) object.service = serviceNameValue;
     const jsonData = JSON.stringify(object);
-    console.log("send",jsonData)
+    
     fetch(`${BASE_URL}/api/v1/mail`, {
         method: 'POST',
         headers: {
@@ -108,7 +108,7 @@ function sendToHref(event) {
     //serviceNameSelect.hidden = false;
 
     serviceNameSelect.value = serviceName;
-    console.log("send",serviceName)
+    // console.log("send",serviceName)
     // Scroll to the form section
     window.location.href = "#form-section";
 }
