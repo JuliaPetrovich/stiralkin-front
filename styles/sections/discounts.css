@@ -24,8 +24,10 @@
 }
 
 .card-con {
+    position: relative;
     filter: drop-shadow(.5rem .5rem 0rem #F3F4F5);
     --theme: #5DA9E9;
+    top:0px;
 }
 
 .card-content {
@@ -271,4 +273,11 @@
         margin-bottom: 7px;
     }
 
+}
+
+@media (min-width: 1000px) {
+    .card-con{
+        position: relative;
+        top: 60px;
+    }
 }
