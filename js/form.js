@@ -29,7 +29,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     if (problemValue) object.problem = problemValue;
     if (serviceNameValue) object.service = serviceNameValue;
     const jsonData = JSON.stringify(object);
-
+    
     fetch(`${BASE_URL}/api/v1/mail`, {
         method: 'POST',
         headers: {
@@ -110,24 +110,25 @@ document.getElementById('discountForm').addEventListener('submit', function (eve
     loader.style.display = 'inline-block';
     buttonTextDiscount.style.display = 'none';
 
+    let serviceNameValue;
+    if (serviceNameSelect) {
+        serviceNameValue = serviceNameSelect.options[serviceNameSelect.selectedIndex].value;
+        console.log(serviceNameSelect);
+    } else {
+        console.log("Элемент с id 'serviceName' не найден.");
+    }
+    let brandValue = brandSelect.options[brandSelect.selectedIndex].value;
+    let ageValue = ageSelect.options[ageSelect.selectedIndex].value;
+    let problemValue = problemSelect.options[problemSelect.selectedIndex].value !== 'form-section' ? problemSelect.options[problemSelect.selectedIndex].value : undefined;
 
     let formData = new FormData(this);
     const object = Object.fromEntries(formData.entries());
     
-    // Преобразуем объект в строку JSON (если нужно, для дальнейшей отправки)
-    let jsonData = JSON.stringify(object);
-    
-    // Преобразуем строку обратно в объект
-    let jsonObject = JSON.parse(jsonData);
-    
-    // Удаляем поле discountName и добавляем поле service с тем же значением
-    jsonObject.service = jsonObject.discountName;  // Добавляем новое поле 'service'
-    delete jsonObject.discountName;  // Удаляем старое поле 'discountName'
-    
-    // Преобразуем обратно в строку JSON, если нужно
-    jsonData = JSON.stringify(jsonObject);
-    
-    console.log(jsonData);  // Печатаем итоговый JSON
+    if (brandValue) object.brand = brandValue;
+    if (ageValue) object.age = ageValue;
+    if (problemValue) object.problem = problemValue;
+    if (serviceNameValue) object.service = serviceNameValue;
+    const jsonData = JSON.stringify(object);
 
     fetch(`${BASE_URL}/api/v1/mail`, {
         method: 'POST',
