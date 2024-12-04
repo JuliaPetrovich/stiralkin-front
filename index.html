@@ -42,6 +42,8 @@
   <link rel="stylesheet" href="styles/sections/feedback-section.css">
   <link rel="stylesheet" href="styles/sections/form-section.css">
   <link rel="stylesheet" href="styles/sections/contact-section.css">
+  <link rel="stylesheet" href="styles/sections/discounts.css">
+
   <link rel="stylesheet" href="styles/animations.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/footer.css">
@@ -148,7 +150,8 @@
 <body>
   <header class="header">
     <div class="logo-container" onclick="scrollToTop()">
-      <img class="logo" src="resources/logo.png" alt="стиралкин на логотипе ремонта стиральных машин" width="90" height="90">
+      <img class="logo" src="resources/logo.png" alt="стиралкин на логотипе ремонта стиральных машин" width="90"
+        height="90">
       <div class="logo-text">i-stiralkin.by</div>
     </div>
     <div class="phones" onclick="ym(97505549, 'reachGoal', '334131379'); return true;">
@@ -345,37 +348,94 @@
       телефону.</p>
     </div>
 
+    <div class="steps-wrap">
 
-    <div class="steps-block1">
-      <div class="steps-block__title1">
-        <h3><span id="ДЛЯ КАЖДОГО ВЫЕЗДА">ДЛЯ КАЖДОГО ВЫЕЗДА</span></h3>
-      </div>
-      <div class="steps-block__list">
-        <div class="steps-block__list-item1">
-          <div class="steps-block__list-check1">
-            <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
+      <div class="card-con">
+        <div class="card"
+          style="mask-image: radial-gradient(circle at right 140px bottom 37px, transparent 37px, black 37.5px),linear-gradient(transparent 25%, black 0px, black 75%, transparent 0px); mask-size: 100%, 2px 8px; mask-repeat: repeat, repeat-y; mask-position: 0px 37px, calc(100% - 138.5px) center; mask-composite: subtract;">
+          <div class="card-content">
+            <div class="card-content-border-dash">
+
+
+              <div class="card-left">
+                <div class="coupon-header">
+                  <h3><span id="СКИДКА">КУПОН НА СКИДКУ 15%</span></h3>
+                </div>
+
+
+
+                <div class="coupon-ad">
+                  <p>
+                    Получите скидку <strong style="font-weight: 900;">15 %</strong> при заказе ремонта <span>с нашего
+                      сайта.</span> Для получения купона просто заполните форму.
+                  </p>
+                </div>
+
+
+
+
+
+              </div>
+
+              <div class="card-right">
+                <form id="discountForm" class="coupon-form">
+                  <img loading="lazy" src="resources/15-discount.png" alt="скидка 15%">
+
+                  <div class="coupon-description-1">
+
+                    <input class="content__form input" name="name" placeholder="Имя" type="text" maxlength="100"
+                      required="">
+                    <input class="content__form input first" name="phone" placeholder="Телефон" type="tel"
+                      pattern="^\+375 \(\d{2}\) \d{3}-\d{2}-\d{2}$" title="Некорректный формат номера телефона"
+                      required="">
+                    <input id="discountName" value="discount-20%" name="discountName" type="hidden">
+
+
+
+                  </div>
+                  <button id="submit-button-discount" class="content__form button" type="submit">
+                    <span id="buttonTextDiscount">Получить скидку</span>
+                    <span id="loader" class="loader"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-          <p>Диагностика - <b>0 BYN</b> ( при последующем ремонте)</p>
-        </div>
-        <div class="steps-block__list-item1">
-          <div class="steps-block__list-check1">
-            <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-          </div>
-          <p>Выезд и Диагностика - <b>30 BYN</b> ( при отказе от ремонта или отсутствии поломки)</p>
+
         </div>
       </div>
-      <br>
-      <div class="services-price__link1">
-        <div class="btn-wrap popup-open">
-          <button class="btn btn-whatsapp">
-            <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-          </button>
-          <div class="btn-light"></div>
+
+
+      <div class="steps-block1">
+        <div class="steps-block__title1">
+          <h3><span id="ДЛЯ КАЖДОГО ВЫЕЗДА">ДЛЯ КАЖДОГО ВЫЕЗДА</span></h3>
+        </div>
+        <div class="steps-block__list">
+          <div class="steps-block__list-item1">
+            <div class="steps-block__list-check1">
+              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
+            </div>
+            <p>Диагностика - <b>0 BYN</b> ( при последующем ремонте)</p>
+          </div>
+          <div class="steps-block__list-item1">
+            <div class="steps-block__list-check1">
+              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
+            </div>
+            <p>Выезд и Диагностика - <b>30 BYN</b> ( при отказе от ремонта или отсутствии поломки)</p>
+          </div>
+        </div>
+        <br>
+        <div class="services-price__link1">
+          <div class="btn-wrap popup-open">
+            <button class="btn btn-whatsapp">
+              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
+            </button>
+            <div class="btn-light"></div>
+          </div>
         </div>
       </div>
     </div>
     </div>
-
 
     <div class="steps-wrap">
       <!-- Проблема 1 -->
@@ -548,7 +608,8 @@
       <!-- Проблема 5 -->
       <div class="steps-block1">
         <div class="steps-block__title1">
-          <h3><span id="Не открывается люк, Не закрывается люк">НЕ ОТКРЫВАЕТСЯ ЛЮК</span>, <span id="Не закрывается люк">НЕ ЗАКРЫВАЕТСЯ
+          <h3><span id="Не открывается люк, Не закрывается люк">НЕ ОТКРЫВАЕТСЯ ЛЮК</span>, <span
+              id="Не закрывается люк">НЕ ЗАКРЫВАЕТСЯ
               ЛЮК</span></h3>
         </div>
         <div class="steps-block__list">
@@ -1086,9 +1147,8 @@
           <form id="contactForm" class="form-section__content content__form">
 
             <input class="content__form input" name="name" placeholder="Имя" type="text" maxlength="100" required>
-            <input class="content__form input" name="phone" placeholder="Телефон" type="text"
-              pattern="^(\+375|375|80)(\(\d{2}\)|\d{2})((\d{7})|(\d{3}-\d{2}-\d{2})|(\d{2}-\d{2}-\d{3}))$"
-              title="Некорректный формат номера телефона" required>
+            <input class="content__form input" name="phone" placeholder="Телефон" type="tel"
+              pattern="^\+375 \(\d{2}\) \d{3}-\d{2}-\d{2}$" title="Некорректный формат номера телефона" required>
 
             <div class="selects select__outer">
               <label style="display: none;" for="serviceName">Выберите услугу</label>
@@ -1505,6 +1565,7 @@
   </button>
 </body>
 <script defer src="js/burger.js"></script>
+<script defer src="js/phone.js"></script>
 <script defer src="js/calculator.js"></script>
 <script async src="js/scrollButton.js"></script>
 <script async src="js/dropdown.js"></script>

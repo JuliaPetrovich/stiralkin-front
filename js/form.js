@@ -29,7 +29,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     if (problemValue) object.problem = problemValue;
     if (serviceNameValue) object.service = serviceNameValue;
     const jsonData = JSON.stringify(object);
-    
+
     fetch(`${BASE_URL}/api/v1/mail`, {
         method: 'POST',
         headers: {
@@ -99,6 +99,106 @@ document.getElementById('contactForm').addEventListener('submit', function (even
             buttonText.style.display = 'inline-block';
         })
 });
+
+
+const submitButtonDiscount = document.getElementById('submit-button-discount');
+const buttonTextDiscount = document.getElementById('buttonTextDiscount');
+
+document.getElementById('discountForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    submitButtonDiscount.disabled = true;
+    loader.style.display = 'inline-block';
+    buttonTextDiscount.style.display = 'none';
+
+
+    let formData = new FormData(this);
+    const object = Object.fromEntries(formData.entries());
+    
+    // Преобразуем объект в строку JSON (если нужно, для дальнейшей отправки)
+    let jsonData = JSON.stringify(object);
+    
+    // Преобразуем строку обратно в объект
+    let jsonObject = JSON.parse(jsonData);
+    
+    // Удаляем поле discountName и добавляем поле service с тем же значением
+    jsonObject.service = jsonObject.discountName;  // Добавляем новое поле 'service'
+    delete jsonObject.discountName;  // Удаляем старое поле 'discountName'
+    
+    // Преобразуем обратно в строку JSON, если нужно
+    jsonData = JSON.stringify(jsonObject);
+    
+    console.log(jsonData);  // Печатаем итоговый JSON
+
+    fetch(`${BASE_URL}/api/v1/mail`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: jsonData
+    })
+        .then(response => {
+
+            if (!response.ok) {
+                return response.json().then(err => {
+                    throw new Error(err.message);
+                });
+            }
+
+            return response.text();
+        })
+        .then(text => {
+            this.reset();
+
+
+
+            Swal.fire({
+                icon: "success",
+                title: "Ваша заявка на скидку успешно отправлена!",
+                text: "С Вами свяжутся в ближайшее время",
+                customClass: {
+                    title: 'my-title-style',
+                    content: 'my-content-style',
+                },
+                showCloseButton: true,
+                showConfirmButton: false
+            });
+
+            // Yandex Metrica conversion
+            ym(97505549, 'reachGoal', '336460081');
+
+            var callback = function () {
+                if (typeof url === "string")
+                    window.location = url;
+            }
+            // Google tag (gtag.js) event -->
+            gtag('event', 'conversion_event_purchase', {
+                'event_callback': callback,
+                'event_timeout': 2000,
+            });
+
+
+        })
+        .catch((error) => {
+            console.error('There was a problem with your fetch operation:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Упс...',
+                text: 'Что-то пошло не так, повторите попытку позже',
+                customClass: {
+                    title: 'my-title-style',
+                    content: 'my-content-style',
+                },
+                showCloseButton: true,
+                showConfirmButton: false
+            });
+        })
+        .finally(() => {
+            submitButtonDiscount.disabled = false;
+            loader.style.display = 'none';
+            buttonTextDiscount.style.display = 'inline-block';
+        })
+});
+
 
 function sendToHref(event) {
     // Get the service name from the clicked button's data attribute
