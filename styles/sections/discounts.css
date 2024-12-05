@@ -128,7 +128,7 @@
     width: 110px;
     border-radius: 25px;
     background-color: #f6f6f5;
-    padding: 19px 25px;
+    padding: 19px 2px;
     font-size: 13px;
     color: #282728;
     letter-spacing: .33px;
@@ -139,7 +139,7 @@
 
 .card button {
     cursor: pointer;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     height: 40px;
     padding: 0px 7px;
@@ -152,14 +152,14 @@
     min-width: auto;
 
     position: absolute;
-    left: 95px;
+    left: 89px;
     margin-bottom: 16px;
 }
 
 @media (max-width: 768px) {
     .card button {
         cursor: pointer;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 400;
         height: 40px;
         padding: 0px 7px;
@@ -187,13 +187,13 @@
 @media (max-width: 450px) {
 
     .card {
-        width: 350px;
-        height: 170px;
+        width: 360px;
+        height: 230px;
         margin: 2rem auto;
         /* border-radius: .5rem; */
         background: #5DA9E9;
 
-        mask-image: radial-gradient(circle at right 140px bottom 37px, transparent 20px, black 20.5px), linear-gradient(transparent 25%, black 0px, black 75%, transparent 0px) !important;
+        mask-image: radial-gradient(circle at right 140px bottom 37px, transparent 30px, black 30.5px), linear-gradient(transparent 25%, black 0px, black 75%, transparent 0px) !important;
         -webkit-mask-image: radial-gradient(circle at right 140px bottom 37px, transparent 20px, black 20.5px), linear-gradient(transparent 25%, black 0px, black 75%, transparent 0px);
         -webkit-mask-size: 100%, 3px 16px;
         -webkit-mask-repeat: repeat, repeat-y;
@@ -203,7 +203,7 @@
     }
 
     .card-content {
-        padding: 10px;
+        padding: 7px;
     }
 
     .coupon-header {
@@ -212,13 +212,13 @@
 
     .coupon-ad {
 
-        margin-top: 4px;
+        margin-top: 1px;
     }
 
     .coupon-ad p {
         width: 95%;
-        font-size: 12px;
-        word-break: break-all;
+        font-size: 15px;
+        word-break: auto-phrase;
     }
 
     .coupon-ad span {
@@ -228,12 +228,12 @@
     }
 
     .card-left {
-        padding: 7px 0px;
-        width:calc(100% - -190.5px);;
+        padding: 8px 3px;
+        width:calc(100% - -210.5px);;
     }
 
     .coupon-header span {
-        font-size: 20px;
+        font-size: 29px;
         letter-spacing: .75px;
         font-weight: 900;
         text-align: center;
@@ -241,36 +241,41 @@
     }
 
     .coupon-description-1 {
-        margin-left: 8px;
+        margin-left: 6px;
         margin-bottom: 7px;
         gap: 6px
     }
 
+    .coupon-form {
+        margin-top: none;
+        margin: 10px 0px;
+    }
+
     .coupon-form img {
-        max-width: 22%;
+        max-width: 26%;
         position: absolute;
-        top: 35px;
-        right: 31px;
+        top: 47px;
+        right: 23px;
     }
 
     .card input {
         outline: none;
-        width: 100px;
+        width: 110px;
         border-radius: 25px;
         background-color: #f6f6f5;
-        padding: 15px 20px;
+        padding: 15px 2px;
         font-size: 13px;
         color: #282728;
         letter-spacing: .33px;
         margin-right: 5px;
         border: none;
-        height: 30px;
+        height: 40px;
     }
 
     .card button {
-        height: 30px;
+        height: 40px;
         left: 60px;
-        margin-bottom: 7px;
+        margin-bottom: 3px;
     }
 
 }
