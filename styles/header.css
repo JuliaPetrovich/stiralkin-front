@@ -82,9 +82,9 @@
     font-size: 20px;
   }
 
-  /* .phones_header_container .ph_num:first-of-type .header-phone__footer.popup-open {
+  .phones_header_container .ph_num:first-of-type .header-phone__footer.popup-open {
     display: none;
-  } */
+  }
 }
 
 .viber-telegram {
