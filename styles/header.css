@@ -55,6 +55,9 @@
 
 }
 
+.phones_header_container .ph_num:nth-of-type(2) .header-phone__footer.popup-open {
+  display: none;
+}
 
 @media (min-width:1000px) {
   .phones_header_container .ph_num:nth-of-type(2) .ring-container {
@@ -79,9 +82,9 @@
     font-size: 20px;
   }
 
-  .phones_header_container .ph_num:first-of-type .header-phone__footer.popup-open {
+  /* .phones_header_container .ph_num:first-of-type .header-phone__footer.popup-open {
     display: none;
-  }
+  } */
 }
 
 .viber-telegram {
