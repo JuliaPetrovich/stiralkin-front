@@ -1,4 +1,10 @@
 .contact-section {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .contact-section.phones {

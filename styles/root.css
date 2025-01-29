@@ -52,6 +52,10 @@ header {
   font-size:medium;
 }
 
+.section-quotes{
+  padding: 25px 0 0;
+}
+
 .section-title {
   line-height: 1.23;
   font-family: 'TildaSans', Arial, sans-serif;

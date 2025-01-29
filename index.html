@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="styles/sections/calculator-section.css">
   <link rel="stylesheet" href="styles/sections/advantages-section.css">
   <link rel="stylesheet" href="styles/sections/prices-section.css">
+  <link rel="stylesheet" href="styles/sections/prices-section-cards.css">
   <link rel="stylesheet" href="styles/sections/additional-information-section.css">
   <link rel="stylesheet" href="styles/sections/steps-section.css">
   <link rel="stylesheet" href="styles/sections/questions-sections.css">
@@ -154,16 +155,27 @@
         height="90">
       <div class="logo-text">i-stiralkin.by</div>
     </div>
-    <div class="phones" onclick="ym(97505549, 'reachGoal', '334131379'); return true;">
-      <a class="ph_num" href="tel:+375293589131" target="_blank">
-        <span>
-          <div class="ring-container">
-            <div class="ringring"></div>
-            <div class="circle"></div>
-          </div><b>A1</b> +375(29)358-91-31
-        </span>
-        <p class="header-phone__footer popup-open">Перезвоним вам за 30 секунд</p>
-      </a>
+    <div class="phones " onclick="ym(97505549, 'reachGoal', '334131379'); return true;">
+      <div class="phones_header_container">
+        <a class="ph_num" href="tel:+375293589131" target="_blank">
+          <span>
+            <div class="ring-container">
+              <div class="ringring"></div>
+              <div class="circle"></div>
+            </div><b>A1</b> +375(29)358-91-31
+          </span>
+          <p class="header-phone__footer popup-open">Перезвоним вам за 30 секунд</p>
+        </a>
+        <a class="ph_num" href="tel:+375293589131" target="_blank">
+          <span>
+            <div class="ring-container">
+              <div class="ringring"></div>
+              <div class="circle"></div>
+            </div><b>MTS</b> +375(33)375-47-54
+          </span>
+          <p class="header-phone__footer popup-open">Перезвоним вам за 30 секунд</p>
+        </a>
+      </div>
       <div class="viber-telegram">
         <a class="viber" href="viber://chat?number=%2B375293589131" target="_blank">
           <img src="resources/viber.svg" alt="Viber" />
@@ -437,482 +449,281 @@
     </div>
     </div>
 
-    <div class="steps-wrap">
-      <!-- Проблема 1 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Не сливает воду">НЕ СЛИВАЕТ ВОДУ</span>, <span id="Не отжимает">НЕ ОТЖИМАЕТ</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт электронного блока управления</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена сливного насоса</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Устранение засора сливной системы</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена приводного ремня</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт и обслуживание двигателя</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>50 Byn</b> до <b>180 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Не сливает воду, Не отжимает">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Проблема 2 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Не заливает воду">НЕ ЗАЛИВАЕТ ВОДУ</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Устранение засора в системе подачи воды</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена клапанов подачи воды</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена электронного блока управления</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>50 Byn</b> до <b>180 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Не заливает воду">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Проблема 3 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Не греет воду">НЕ ГРЕЕТ ВОДУ</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена ТЭНа</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена термодатчика</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт электронного блока управления</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>115 Byn</b> до <b>180 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Не греет воду">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="steps-wrap">
-      <!-- Проблема 4 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Не включается">НЕ ВКЛЮЧАЕТСЯ</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена сетевого кабеля или вилки</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена сетевого фильтра</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт электронного блока управления</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт платы индикации</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>80 Byn</b> до <b>180 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Не включается">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Проблема 5 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Не открывается люк">НЕ ОТКРЫВАЕТСЯ ЛЮК</span>, <span
-              id="Не закрывается люк">НЕ ЗАКРЫВАЕТСЯ
-              ЛЮК</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Вскрытие загрузочного люка (без последующего ремонта)</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена устройства блокировки люка</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена ручки люка</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт электронного блока управления</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена люка в сборе</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>50 Byn</b> до <b>220 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Не открывается люк, Не закрывается люк">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Проблема 6 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Не крутит барабан">НЕ КРУТИТ БАРАБАН</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена приводного ремня</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт и обслуживание двигателя</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт электронного блока управления</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена двигателя</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Устранение постороннего предмета в баке (с разбором бака)</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>120 Byn</b> до <b>280 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Не крутит барабан">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="steps-wrap">
-      <!-- Проблема 7 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Зависает в процессе стирки">ЗАВИСАЕТ В ПРОЦЕССЕ СТИРКИ</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт электронного блока управления</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена ТЭНа</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена термодатчика</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена сливного насоса</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт проводки СМА</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>100 Byn</b> до <b>180 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Зависает в процессе стирки">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Проблема 8 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Шумит">ШУМИТ</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена подшипников барабана*</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена крестовины барабана*</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена амортизаторов за 2 шт.</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Устранение постороннего предмета в баке (без разбора бака)</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт и обслуживание двигателя</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Установка СМА по уровню</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>50 Byn</b> до <b>250 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Шумит">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Проблема 9 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Течёт под машинкой">ТЕЧЁТ ПОД МАШИНКОЙ</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Герметизация порошкоприёмника</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена манжеты люка</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Мелкий ремонт</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена патрубков</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена шлангов</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>80 Byn</b> до <b>220 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Течёт под машинкой">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="steps-wrap">
-      <!-- Проблема 10 -->
-      <div class="steps-block1">
-        <div class="steps-block__title1">
-          <h3><span id="Выбивает пробки">ВЫБИВАЕТ ПРОБКИ</span></h3>
-        </div>
-        <div class="steps-block__list">
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена ТЭНа</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Замена двигателя</p>
-          </div>
-          <div class="steps-block__list-item1">
-            <div class="steps-block__list-check1">
-              <img loading="lazy" src="resources/check-circle.svg" alt="изображение галочки">
-            </div>
-            <p>Ремонт проводки</p>
-          </div>
-        </div>
-        <br>
-        <div class="steps-block__title11">от <b>80 Byn</b> до <b>280 Byn</b></div>
-        <div class="services-price__link1">
-          <div class="btn-wrap popup-open">
-            <button class="btn btn-whatsapp" data-service-name="Выбивает пробки">
-              <img loading="lazy" src="resources/phone-incoming.svg" alt="изображение телефона"> Оставить заявку
-            </button>
-            <div class="btn-light"></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <table>
+      <tr>
+        <th>
+          <h6>Виды неисправностей и типы ремонта</h6>
+        </th>
+        <th>Цена РУБ. (запчасти+работа)</th>
+      </tr>
+      <tr class="category">
+        <td>Диагностика (при осуществлении последующего ремонта)</td>
+        <td>Бесплатно</td>
+      </tr>
+      <tr>
+        <td>Выезд и диагностика (при отказе от ремонта или отсутствии поломки)</td>
+        <td>30</td>
+      </tr>
+      <tr class="category">
+        <td>
+          <h6>
+            <span id="Не сливает воду">НЕ СЛИВАЕТ ВОДУ</span>
+            ,
+            <span id="Не отжимает">НЕ ОТЖИМАЕТ</span>
+          </h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ремонт электронного блока управления</td>
+        <td>120-180</td>
+      </tr>
+      <tr>
+        <td>Замена сливного насоса</td>
+        <td>120-160</td>
+      </tr>
+      <tr>
+        <td>Устранение засора сливной системы</td>
+        <td>50-120</td>
+      </tr>
+      <tr>
+        <td>Замена приводного ремня</td>
+        <td>120-150</td>
+      </tr>
+      <tr>
+        <td>Ремонт и обслуживание двигателя</td>
+        <td>150-180</td>
+      </tr>
+      <tr class="category" id="Не заливает воду">
+        <td>
+          <h6>НЕ ЗАЛИВАЕТ ВОДУ</h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Устранение засора в системе подачи воды</td>
+        <td>50-120</td>
+      </tr>
+      <tr>
+        <td>Замена клапанов подачи воды</td>
+        <td>120-160</td>
+      </tr>
+      <tr>
+        <td>Замена электронного блока управления</td>
+        <td>120-180</td>
+      </tr>
+      <tr class="category" id="Не греет воду">
+        <td>
+          <h6>НЕ ГРЕЕТ ВОДУ</h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Замена ТЭНа</td>
+        <td>120-160</td>
+      </tr>
+      <tr>
+        <td>Замена термодатчика</td>
+        <td>115-130</td>
+      </tr>
+      <tr>
+        <td>Ремонт электронного блока управления</td>
+        <td>120-180</td>
+      </tr>
+      <tr class="category" id="Не включается">
+        <td>
+          <h6>НЕ ВКЛЮЧАЕТСЯ</h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Замена сетевого кабеля или вилки</td>
+        <td>80-100</td>
+      </tr>
+      <tr>
+        <td>Замена сетевого фильтра</td>
+        <td>115-130</td>
+      </tr>
+      <tr>
+        <td>Ремонт электронного блока управления</td>
+        <td>120-180</td>
+      </tr>
+      <tr>
+        <td>Ремонт платы индикации</td>
+        <td>120-180</td>
+      </tr>
+      <tr class="category">
+        <td>
+          <h6>
+            <span id="Не открывается люк">НЕ ОТКРЫВАЕТСЯ ЛЮК</span>
+            ,
+            <span id="Не закрывается люк">НЕ ЗАКРЫВАЕТСЯ ЛЮК</span>
+          </h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Вскрытие загрузочного люка (без последующего ремонта)</td>
+        <td>50-100</td>
+      </tr>
+      <tr>
+        <td>Замена устройства блокировки люка</td>
+        <td>120-180</td>
+      </tr>
+      <tr>
+        <td>Замена ручки люка</td>
+        <td>105-130</td>
+      </tr>
+      <tr>
+        <td>Ремонт электронного блока управления</td>
+        <td>120-180</td>
+      </tr>
+      <tr>
+        <td>Замена люка в сборе</td>
+        <td>130-220</td>
+      </tr>
+      <tr class="category" id="Не крутит барабан">
+        <td>
+          <h6>НЕ КРУТИТ БАРАБАН</h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Замена приводного ремня</td>
+        <td>120-150</td>
+      </tr>
+      <tr>
+        <td>Ремонт и обслуживание двигателя</td>
+        <td>150-180</td>
+      </tr>
+      <tr>
+        <td>Ремонт электронного блока управления</td>
+        <td>120-180</td>
+      </tr>
+      <tr>
+        <td>Замена двигателя</td>
+        <td>150-280</td>
+      </tr>
+      <tr>
+        <td>Устранение постороннего предмета в баке (с разбором бака)</td>
+        <td>200-250</td>
+      </tr>
+      <tr class="category" id="Зависает в процессе стирки">
+        <td>
+          <h6>ЗАВИСАЕТ В ПРОЦЕССЕ СТИРКИ</h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ремонт электронного блока управления</td>
+        <td>120-180</td>
+      </tr>
+      <tr>
+        <td>Замена ТЭНа</td>
+        <td>120-160</td>
+      </tr>
+      <tr>
+        <td>Замена термодатчика</td>
+        <td>115-130</td>
+      </tr>
+      <tr>
+        <td>Замена сливного насоса</td>
+        <td>120-160</td>
+      </tr>
+      <tr>
+        <td>Ремонт проводки СМА</td>
+        <td>100-160</td>
+      </tr>
+      <tr class="category" id="Шумит">
+        <td>
+          <h6>ШУМИТ</h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Замена подшипников барабана <span class="quoute-symbol">*</span></td>
+        <td>220-250</td>
+      </tr>
+      <tr>
+        <td>Замена крестовины барабана</td>
+        <td>100-120</td>
+      </tr>
+      <tr>
+        <td>Замена амортизаторов за 2 шт.</td>
+        <td>120-160</td>
+      </tr>
+      <tr>
+        <td>Устранение постороннего предмета в баке (без разбора бака)</td>
+        <td>100-120</td>
+      </tr>
+      <tr>
+        <td>Ремонт и обслуживание двигателя</td>
+        <td>150-180</td>
+      </tr>
+      <tr>
+        <td>Установка СМА по уровню</td>
+        <td>50</td>
+      </tr>
+      <tr class="category" id="Течёт под машинкой">
+        <td>
+          <h6>ТЕЧЁТ ПОД МАШИНКОЙ</h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Герметизация порошкоприёмника</td>
+        <td>100-120</td>
+      </tr>
+      <tr>
+        <td>Замена манжеты люка</td>
+        <td>140-220</td>
+      </tr>
+      <tr>
+        <td>Мелкий ремонт</td>
+        <td>80-120</td>
+      </tr>
+      <tr>
+        <td>Замена патрубков</td>
+        <td>130-150</td>
+      </tr>
+      <tr>
+        <td>Замена шлангов</td>
+        <td>80-120</td>
+      </tr>
+      <tr class="category" id="Выбивает пробки">
+        <td>
+          <h6>ВЫБИВАЕТ ПРОБКИ</h6>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Замена ТЭНа</td>
+        <td>120-160</td>
+      </tr>
+      <tr>
+        <td>Замена двигателя</td>
+        <td>220-280</td>
+      </tr>
+      <tr>
+        <td>Ремонт проводки</td>
+        <td>80-120</td>
+      </tr>
+    </table>
 
 
   </section>
 
-  <section class="section">
-    <!-- <ul class="additional-information-section__list">
-      <li class="additional-information-section__item">При заказе ремонта - выезд и диагностика 0 руб. При <u>отказе</u>
+  <section class="section-quotes">
+    <ul class="additional-information-section__list">
+      <!-- <li class="additional-information-section__item">При заказе ремонта - выезд и диагностика 0 руб. При <u>отказе</u>
         от ремонта или его нецелесообразности заказчик оплачивает 30 бел. руб. за вызов и диагностику
       </li>
-      <li class="additional-information-section__item">Стоимость выезда за пределы города - по согласованию сторон.</li>
+      <li class="additional-information-section__item">Стоимость выезда за пределы города - по согласованию сторон.</li> -->
       <li class="additional-information-section__item">Стоимость замены подшипников указана для разборного бака.</li>
-      <li class="additional-information-section__item">К приезду мастера заказчик должен предоставить доступ к машине с
+      <!-- <li class="additional-information-section__item">К приезду мастера заказчик должен предоставить доступ к машине с
         трёх сторон.
-      </li>
-    </ul> -->
+      </li> -->
+    </ul>
   </section>
   <section id="steps-section" class="section smaller_padding_section">
     <h4 class="section-title">Из каких этапов состоит ремонт?</h4>
@@ -1498,6 +1309,12 @@
               <div class="ringring"></div>
               <div class="circle"></div>
             </div><b>A1</b> +375(29)358-91-31
+          </a>
+          <a class="contact-section phone" href="tel:+375333754754">
+            <div class="ring-container">
+              <div class="ringring"></div>
+              <div class="circle"></div>
+            </div><b>MTS</b> +375(33)375-47-54
           </a>
 
         </div>
