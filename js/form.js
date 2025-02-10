@@ -16,10 +16,10 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     buttonText.style.display = 'none';
 
     //let serviceNameValue = serviceNameSelect.value;
-    let serviceNameValue = serviceNameSelect.options[serviceNameSelect.selectedIndex].value;
-    let brandValue = brandSelect.options[brandSelect.selectedIndex].value;
-    let ageValue = ageSelect.options[ageSelect.selectedIndex].value;
-    let problemValue = problemSelect.options[problemSelect.selectedIndex].value !== 'form-section' ? problemSelect.options[problemSelect.selectedIndex].value : undefined;
+    let serviceNameValue = serviceNameSelect?.options[serviceNameSelect.selectedIndex].value;
+    let brandValue = brandSelect?.options[brandSelect.selectedIndex].value;
+    let ageValue = ageSelect?.options[ageSelect.selectedIndex].value;
+    let problemValue = problemSelect?.options[problemSelect.selectedIndex].value !== 'form-section' ? problemSelect.options[problemSelect.selectedIndex].value : undefined;
 
 
     let formData = new FormData(this);
