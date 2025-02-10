@@ -7,7 +7,7 @@ const brandSelect = document.getElementById('brand');
 const serviceNameSelect = document.getElementById('serviceName');
 let serviceNameValue;
 
-const BASE_URL = 'https://stiralkinback-production.up.railway.app'
+const BASE_URL = 'https://backstiral-production.up.railway.app'
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
