@@ -49,34 +49,34 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         })
         .then(text => {
             this.reset();
+            Swal.fire({
+                icon: "success",
+                title: "Ваша заявка успешно отправлена!",
+                text: "С Вами свяжутся в ближайшее время",
+                customClass: {
+                    title: 'my-title-style',
+                    content: 'my-content-style',
+                },
+                showCloseButton: true,
+                showConfirmButton: false
+            });
 
-            window.location.href = "success.html";
+            // Yandex Metrica conversion
+            ym(97505549, 'reachGoal', '336460081');
+
+            var callback = function () {
+                if (typeof url === "string")
+                    window.location = url;
+            }
+            // Google tag (gtag.js) event -->
+            gtag('event', 'conversion_event_purchase', {
+                'event_callback': callback,
+                'event_timeout': 2000,
+            });
+
             setTimeout(() => {
-                Swal.fire({
-                    icon: "success",
-                    title: "Ваша заявка успешно отправлена!",
-                    text: "С Вами свяжутся в ближайшее время",
-                    customClass: {
-                        title: 'my-title-style',
-                        content: 'my-content-style',
-                    },
-                    showCloseButton: true,
-                    showConfirmButton: false
-                });
-
-                // Yandex Metrica conversion
-                ym(97505549, 'reachGoal', '336460081');
-
-                var callback = function () {
-                    if (typeof url === "string")
-                        window.location = url;
-                }
-                // Google tag (gtag.js) event -->
-                gtag('event', 'conversion_event_purchase', {
-                    'event_callback': callback,
-                    'event_timeout': 2000,
-                });
-            }, 1000)
+                window.location.href = "success.html";
+            }, 2500)
 
 
 
@@ -95,7 +95,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
                 showCloseButton: true,
                 showConfirmButton: false
             })
-           
+
         })
         .finally(() => {
             submitButton.disabled = false;
