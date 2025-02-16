@@ -14,5 +14,6 @@ Disallow:
 Disallow: /cgi-bin/
 Disallow: /js/
 Disallow: /styles/
+Disallow: /success.html
 Sitemap: https://www.i-stiralkin.by/sitemap.xml
 Host: i-stiralkin.by
