@@ -38,8 +38,8 @@ header {
   background-color: rgb(5, 71, 89);
 }
 
-.smaller_padding_section{
-  padding:0px 0 0 !important;
+.smaller_padding_section {
+  padding: 0px 0 0 !important;
 }
 
 .section {
@@ -49,14 +49,20 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 960px;
-  font-size:medium;
+  font-size: medium;
 }
 
-.success-section{
+.success-section {
   padding: 13vw;
 }
 
-.section-quotes{
+@media (max-width: 1300px) {
+  .success-section {
+    padding: 36vh;
+  }
+}
+
+.section-quotes {
   padding: 45px 0 40px;
 }
 
