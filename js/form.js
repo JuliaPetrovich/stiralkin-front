@@ -29,7 +29,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     if (problemValue) object.problem = problemValue;
     if (serviceNameValue) object.service = serviceNameValue;
     const jsonData = JSON.stringify(object);
-    
+
     fetch(`${BASE_URL}/api/v1/mail`, {
         method: 'POST',
         headers: {
@@ -50,37 +50,40 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         .then(text => {
             this.reset();
 
+            window.location.href = "success.html";
+            setTimeout(() => {
+                Swal.fire({
+                    icon: "success",
+                    title: "Ваша заявка успешно отправлена!",
+                    text: "С Вами свяжутся в ближайшее время",
+                    customClass: {
+                        title: 'my-title-style',
+                        content: 'my-content-style',
+                    },
+                    showCloseButton: true,
+                    showConfirmButton: false
+                });
 
+                // Yandex Metrica conversion
+                ym(97505549, 'reachGoal', '336460081');
 
-            Swal.fire({
-                icon: "success",
-                title: "Ваша заявка успешно отправлена!",
-                text: "С Вами свяжутся в ближайшее время",
-                customClass: {
-                    title: 'my-title-style',
-                    content: 'my-content-style',
-                },
-                showCloseButton: true,
-                showConfirmButton: false
-            });
+                var callback = function () {
+                    if (typeof url === "string")
+                        window.location = url;
+                }
+                // Google tag (gtag.js) event -->
+                gtag('event', 'conversion_event_purchase', {
+                    'event_callback': callback,
+                    'event_timeout': 2000,
+                });
+            }, 1000)
 
-            // Yandex Metrica conversion
-            ym(97505549, 'reachGoal', '336460081');
-
-            var callback = function () {
-                if (typeof url === "string")
-                    window.location = url;
-            }
-            // Google tag (gtag.js) event -->
-            gtag('event', 'conversion_event_purchase', {
-                'event_callback': callback,
-                'event_timeout': 2000,
-            });
 
 
         })
         .catch((error) => {
             console.error('There was a problem with your fetch operation:', error);
+
             Swal.fire({
                 icon: 'error',
                 title: 'Упс...',
@@ -91,7 +94,8 @@ document.getElementById('contactForm').addEventListener('submit', function (even
                 },
                 showCloseButton: true,
                 showConfirmButton: false
-            });
+            })
+           
         })
         .finally(() => {
             submitButton.disabled = false;
@@ -123,7 +127,7 @@ document.getElementById('discountForm').addEventListener('submit', function (eve
 
     let formData = new FormData(this);
     const object = Object.fromEntries(formData.entries());
-    
+
     if (brandValue) object.brand = brandValue;
     if (ageValue) object.age = ageValue;
     if (problemValue) object.problem = problemValue;

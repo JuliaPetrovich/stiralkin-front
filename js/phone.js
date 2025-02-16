@@ -60,6 +60,25 @@ phoneInputs.forEach((input) => {
                     result += value[i + 2];
             }
             input.value = result;
-          
+
         });
+
+    // Обработчик для клавиш Backspace и Delete
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Backspace" || e.key === "Delete") {
+            const cursorPos = input.selectionStart;
+            let value = input.value;
+          
+            // Если курсор на позиции после цифры 3, 6 или 8 (где тире), удаляем тире
+            if(cursorPos===10 || cursorPos===9){
+                value = value.slice(0, cursorPos - 2) + value.slice(cursorPos);
+            } else if (value[value.length - 1] === "-") {
+                value = value.slice(0, cursorPos - 1) + value.slice(cursorPos);
+            } else {
+                value = value.slice(0, cursorPos) + value.slice(cursorPos);
+            }
+            
+            input.value = value; // Обновляем значение
+        }
+    });
 })        
